@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+  <header>
+    <a href="#home" class="logo">Witty <span>Vishnu</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>  
+      <a href="#contact">Contact</a>  
+
+    </nav>
+    <button class="gradient-btn" id="contactBtn">Contact Me</button>
+
+
+  </header>
+    <section class="home" id="home"> 
+      <div class="home-content">
+        <h1>Hi I am <span class="typed-text"></span></h1>
+        <h3>I'm a <span>Web developer</span></h3>
+        <p>I am a passionate web developer with expertise in creating modern and responsive web applications using the latest technologies.</p>
+        <div class="social-icons">
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class='bx bxl-linkedin-square'></i></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+        </div>
+        <div class="btn-group">
+          <a href="#" class="btn">Hire</a>
+          <!-- <a href="#contact" class="btn">Contact</a> -->
+          <a href="resume.pdf" download class="btn">
+          <span class="hover-black">Download Resume</span>
+          <i class='bx bx-download'></i>
+        </a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="image.jpg" alt="profile">
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-img">
+      <img src="image.jpg" alt="">
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+              <p class="about-text">
+        I am a passionate and motivated full stack web developer with a strong foundation in both frontend and backend technologies. I enjoy building clean, responsive, and user-friendly websites, and I’m continuously learning to improve my skills and stay updated with the latest trends in web development.
+        <span class="more-text">
+          <br><br>
+          My skillset includes HTML, CSS, JavaScript, React, Node.js, Express,SQL and MongoDB. I’m eager to contribute to real-world projects, solve meaningful problems, and grow as a developer by turning creative ideas into functional digital solutions.
+          <br><br>
+        </span>
+      </p>
+
+
+        <a href="#" class="btn read-more-btn">Read More</a>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <h1 class="heading">Services</h1>
+      <div class="services-container">
+        
+        <div class="services-box">
+          <div class="service-info">
+            <i class="bx bx-code"></i>
+            <h4>Frontend Developer</h4>
+            <p>Skilled in creating responsive and interactive user interfaces using HTML, CSS, and JavaScript frameworks.</p>
+          </div>
+        </div>
+    
+        <div class="services-box">
+          <div class="service-info">
+            <i class='bx bx-code-curly' ></i>
+            <h4>Backend Developer</h4>
+            <p>Experienced in building robust server-side applications and RESTful APIs using modern backend technologies.</p>
+          </div>
+        </div>
+        <div class="services-box">
+          <div class="service-info">
+            <i class='bx bx-palette'></i>
+            <h4>UI / UX Design</h4>
+            
+            <p>Creating intuitive and visually appealing user experiences through thoughtful design and prototyping.</p>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    <section class="projects" id="projects">
+        <h1 class="heading">Projects</h1>
+        <div class="projects-box">
+          <div class="projects-card">
+            <img src="project1.png" alt="Portfolio Website">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio website built with HTML, CSS and JavaScript showcasing my skills and projects.</p>
+            <a href="#" class="btn">Review Project</a>
+          </div>
+          <div class="projects-card">
+            <img src="project2.png" alt="E-commerce Website">
+            <h3>E-commerce Website</h3>
+            <p>A full-stack e-commerce platform with user authentication, product catalog, and payment integration.</p>
+            <a href="#" class="btn">Review Project</a>
+          </div>
+          <div class="projects-card">
+            <img src="project3.png" alt="Task Manager App">
+            <h3>Task Manager App</h3>
+            <p>A dynamic task management application with real-time updates, user collaboration and task prioritization features.</p>
+            <a href="#" class="btn">Review Project</a>
+          </div>
+          <div class="projects-card">
+            <img src="project4.png" alt="Weather App">
+            <h3>Weather Dashboard</h3>
+            <p>An interactive weather application that provides real-time weather data and forecasts using weather API integration.</p>
+            <a href="#" class="btn">Review Project</a>
+          </div>
+          <div class="projects-card">
+            <img src="project5.png" alt="Blog Platform">
+            <h3>Blog Platform</h3>
+            <p>A content management system allowing users to create, edit and publish blog posts with markdown support.</p>
+            <a href="#" class="btn">Review Project</a>
+          </div>
+          <div class="projects-card">
+            <img src="project6.png" alt="Chat Application">
+            <h3>Real-time Chat App</h3>
+            <p>A real-time messaging application built with WebSocket technology enabling instant communication between users.</p>
+            <a href="#" class="btn">Review Project</a>
+          </div>
+        </div>
+        
+
+    </section>
+    <section class="contact" id="contact">
+
+     
+      <form id="contactForm"><h1 class="heading">Contact </span>Me</span></h1>
+            
+        <div class="input-group-1">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Name *" required>
+            <input type="email" name="email" placeholder="Email *" required>
+          </div>
+          <div class="input-box">
+            <input type="tel" name="phone_number" placeholder="Phone Number">
+            <input type="text" name="subject" placeholder="Subject *" required>
+          </div>
+        </div>
+        <!-- Your existing form fields -->
+        <div class="input-group-2">
+          <textarea name="message" cols="50" rows="2" placeholder="Message *" required maxlength="500"></textarea>
+          <div class="char-count">
+            <span id="current">0</span>/<span id="maximum">500</span>
+          </div>
+          <button type="submit" class="btn submit-btn">
+            <span class="btn-text" style="color: black;">Send Message</span>
+            <div class="loader hidden"></div>
+          </button>
+        </div>
+      </form>
+    </section>
+    
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class='bx bxl-linkedin-square'></i></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+      </div>  
+      <ul class="list">
+        <li><a href="#">FAQ</a></li>   
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p class="copyright">Copyright &copy; 2025 by Witty Vishnu | All Rights Reserved.</p>
+      
+    </footer>
+
+    <script src="script.js"></script>
+    <div id="toast" class="toast hidden">
+     <div class="toast-content">
+    <i class='bx bx-check-circle'></i>
+    <span class="message" style="color: black;">Message sent successfully!</span>
+  </div>
+</div>
+  </body>
+  
+</html>
