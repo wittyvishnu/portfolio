@@ -201,3 +201,21 @@ Best regards,
     // Open Gmail in a new tab
     window.open(gmailUrl, '_blank');
 });
+document.getElementById('hireBtn').addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent the default anchor behavior
+
+    const email = 'vishnuwitty@gmail.com';
+    const subject = encodeURIComponent('Interested in Hiring You!');
+    const body = encodeURIComponent(`Hi Vishnu,
+
+I came across your portfolio and was impressed by your work. I'm reaching out to discuss a potential opportunity to collaborate or hire you for a role/project.
+
+Looking forward to connecting!
+
+Best regards,
+[Your Name]`);
+
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+
+    window.open(gmailUrl, '_blank');
+});
